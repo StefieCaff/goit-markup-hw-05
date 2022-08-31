@@ -1,11 +1,3 @@
-/*svg sprite--not sure I need this now
-
-/* .icon {
-  width: 50px;
-  height: 50px;
-  margin: .5em;
-} */
-
 /* doc styles*/
 
 :focus{
@@ -310,6 +302,27 @@ color: var(--accent-color);
 
 .we-do-item:not(:last-child){
   margin-right: 30px;
+}
+
+.we-do-item{
+  position:relative;
+}
+
+.we-do-label{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--light-accent-background-color);
+  position: absolute;
+  background: rgba(47, 48, 58, 0.8);
+  padding: 27px 132px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  white-space:nowrap;
 }
 
 .section-heading{
