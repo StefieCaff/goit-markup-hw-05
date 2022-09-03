@@ -166,36 +166,20 @@ color: var(--dark-accent-color);
   display:flex;
 }
 
-
-/* .current-link{
-  display:inline-flex;
-  flex-direction: column;
-  align-items: center;
-    content: "";
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    background-image: url("/images/hover.jpg");
+.nav-bar-item{
+  position: absolute;
 }
 
 .current-link::after{
-    content: "";
-    display: inline-flex;
-    flex-direction: row;
-    align-items: center;
-    display:none;
-    width: 100%;
-    height:4px;
-    border-radius: 2px;
-    background-image: url("/images/hover.jpg");
-}
-
-.current-link:hover::after{
-  display: block;
-  border-radius: 2px;
-  width: 100px;
+  position: relative;
+  display:inline-block;
+  top: 36px;
+  content: "";
+  width: 100%;
   height: 4px;
-} */
+  border-radius: 2px;
+  background-image: url("/images/hover.jpg");
+}
 
 .hero-button:focus,
 .hero-button:hover{
