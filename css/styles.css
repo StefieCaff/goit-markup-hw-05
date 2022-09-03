@@ -12,9 +12,8 @@
  --sub-font-size: 16px;
  --main-background-color:#FFFFFF;
  --sub-background-color: #F5F4FA;
- --dark-accent-background-color: #2196F3;
- --light-accent-background-color:#FFFFFF;
- --accent-color:#2196F3;
+ --dark-accent-color: #2196F3;
+ --light-accent-color:#FFFFFF;
 }
 
 body{
@@ -123,7 +122,7 @@ margin-right: 50px;
   font-family: Raleway, sans-serif;
   font-size:  26px;
   font-weight: 700;
-  color: var(--accent-color);
+  color: var(--dark-accent-color);
   line-height: 31px;
   letter-spacing: 0.03em;
 }
@@ -150,10 +149,7 @@ margin-right: 50px;
 
 .header-icon{
   fill:currentColor;
-  margin-right: 10px
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  margin-right: 10px;
 }
 
 .current-link,
@@ -163,7 +159,7 @@ margin-right: 50px;
 .navbar-contact-link:hover,
 .header-contact-link:hover,
 .header-icon-link:hover{
-color: var(--accent-color);
+color: var(--dark-accent-color);
 }
 
 .navbar-item{
@@ -208,20 +204,20 @@ color: var(--accent-color);
 
 .socials-link:focus,
 .socials-link:hover{
-  background-color: var(--dark-accent-background-color);
-  color: var(--light-accent-background-color)
+  background-color: var(--dark-accent-color);
+  color: var(--light-accent-color)
 }
 
 
 .clients-linkfocus,
 .clients-link:hover {
   border: 1px solid #2196F3;
-  color: var(--accent-color);
+  color: var(--dark-accent-color);
 }
 
 .filter-button:focus,
 .filter-button:hover {
-  background-color:var(--dark-accent-background-color);
+  background-color:var(--dark-accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
   0px 1px 2px rgba(0, 0, 0, 0.08), 
   0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -229,14 +225,14 @@ color: var(--accent-color);
 
 .footer-socials-link:hover,
 .footer-socials-link:focus{
-  background-color: var(--dark-accent-background-color);
+  background-color: var(--dark-accent-color);
 }
 
 .footer-address-link:focus,
 .filter-button:focus,
 .footer-address-link:hover,
 .filter-button:hover{
-  color: var(--light-accent-background-color);
+  color: var(--light-accent-color);
 }
 
 .header-contact-link{
@@ -365,7 +361,7 @@ color: var(--accent-color);
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--light-accent-background-color);
+  color: var(--light-accent-color);
   position: absolute;
   background: rgba(47, 48, 58, 0.8);
   padding: 27px 132px;
@@ -520,7 +516,7 @@ color: var(--accent-color);
     background: #FFFFFF;
 }
 
-.footer-projects{
+.project-wrapper{
    display: flex;
    flex-direction: column;
    padding:20px 24px;
@@ -546,8 +542,8 @@ color: var(--accent-color);
 }
 
 .filter-current{
-  background-color: var(--dark-accent-background-color);
-  color: var(--light-accent-background-color);
+  background-color: var(--dark-accent-color);
+  color: var(--light-accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
   0px 1px 2px rgba(0, 0, 0, 0.08), 
   0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -571,8 +567,8 @@ color: var(--accent-color);
 .projects-link{
   display:block;
   transition-property: box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .projects-link:focus,
@@ -582,22 +578,31 @@ color: var(--accent-color);
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.projects-box{
-  position:relative;
+
+.project-description{
+  position: relative;
+  /* width: 370px;
+  height: 294px; */
+  background-color: rgba(33, 150, 243, 0.9);
+  /* overflow:hidden; */
 }
 
-.projects-overlay{
+.project-overlay{
   position:absolute;
-    position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: #3f51b5;
-    
-      transform: translatex(-100%);
-      transition: transform 250ms ease;
-}
+  width: 370px;
+  height: 294px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  padding: 63px 24px 91px 24px;
+  color: var(--light-accent-color);
+  background-color: rgba(33, 150, 243, 0.9);
+  /* transform: translateY(294px); */
+    /* transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);  */
+} 
 
 .footer{
   background-color: #2F303A;
@@ -635,7 +640,7 @@ color: var(--accent-color);
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--light-accent-background-color);
+  color: var(--light-accent-color);
   margin-top: 15px; 
 }
 
