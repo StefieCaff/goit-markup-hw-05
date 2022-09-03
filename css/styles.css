@@ -583,7 +583,7 @@ color: var(--dark-accent-color);
   position: relative;
   width: 370px;
   height:294px;
-  /* overflow:hidden; */
+  overflow:hidden;
 }
 
 .project-overlay{
@@ -599,14 +599,14 @@ color: var(--dark-accent-color);
   padding: 63px 24px 91px 24px;
   color: var(--light-accent-color);
   background-color: rgba(33, 150, 243, 0.9);
-  /* transform: translateY(294px); */
+  transform: translateY(294px);
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 } 
 
- .project-overlay:hover{
-  transform: translateY(-294px);
+ .project-overlay:hover, .project-description:hover{
+  transform: translateY(0);
 }
 
 .footer{
