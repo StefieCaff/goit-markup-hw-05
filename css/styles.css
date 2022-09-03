@@ -275,7 +275,7 @@ color: var(--dark-accent-color);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.data-modal{
+.backdrop-hidden{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -296,7 +296,7 @@ color: var(--dark-accent-color);
   border-radius: 4px;
 }
 
-.data-modal-close{
+.form-close{
   position: absolute;
   right: 0;
   width: 30px;
@@ -625,7 +625,8 @@ color: var(--dark-accent-color);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 } 
 
- .project-overlay:hover, .project-description:hover{
+ .project-overlay:hover, 
+ /* .project-description:hover{ */
   transform: translateY(0);
 }
 
