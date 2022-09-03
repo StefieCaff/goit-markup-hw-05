@@ -503,14 +503,14 @@ color: var(--dark-accent-color);
   margin-right: 8px;
 }
 
-.projects{
+.project-list{
   display: flex;
   flex-wrap: wrap;
   margin-left:-30px;
   margin-top:-30px;
 }
   
-.projects-item{
+.project-item{
     margin-left: 30px;
     margin-top: 30px;
     background: #FFFFFF;
@@ -549,14 +549,14 @@ color: var(--dark-accent-color);
   0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.projects-heading{
+.project-heading{
   font-weight: 700;
   font-size: 18px;
   line-height: 36px;
   letter-spacing: 0.06em;
 }
 
-.projects-filter{
+.project-filter{
   font-weight: 400;
   font-size: var(--sub-font-size);
   line-height: 30px;
@@ -564,15 +564,15 @@ color: var(--dark-accent-color);
   color: var(--sub-color);
 }
 
-.projects-link{
+.project-link{
   display:block;
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.projects-link:focus,
-.projects-link:hover{
+.project-link:focus,
+.project-link:hover{
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
     0px 4px 4px rgba(0, 0, 0, 0.06), 
     1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -581,14 +581,15 @@ color: var(--dark-accent-color);
 
 .project-description{
   position: relative;
-  /* width: 370px;
-  height: 294px; */
-  background-color: rgba(33, 150, 243, 0.9);
+  width: 370px;
+  height:294px;
   /* overflow:hidden; */
 }
 
 .project-overlay{
   position:absolute;
+  top: 0;
+  left: 0;
   width: 370px;
   height: 294px;
   font-weight: 400;
@@ -599,10 +600,14 @@ color: var(--dark-accent-color);
   color: var(--light-accent-color);
   background-color: rgba(33, 150, 243, 0.9);
   /* transform: translateY(294px); */
-    /* transition-property: transform;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);  */
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 } 
+
+ .project-overlay:hover{
+  transform: translateY(-294px);
+}
 
 .footer{
   background-color: #2F303A;
