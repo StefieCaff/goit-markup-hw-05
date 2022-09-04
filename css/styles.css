@@ -104,6 +104,9 @@ margin-right: 50px;
   margin-left: 97px;
 }
 
+.navbar-item{
+  align-items: center;
+}
 .nav-contacts{
   display: flex;
 }
@@ -140,6 +143,7 @@ margin-right: 50px;
 .header-icon-link{
   display: flex;
   align-items: center;
+  justify-content:center;
   color:var(--sub-color);
   cursor:pointer;
   transition-property: color;
@@ -161,22 +165,20 @@ margin-right: 50px;
 .header-icon-link:hover{
 color: var(--dark-accent-color);
 }
-
+ 
 .navbar-item{
   display:flex;
-}
-
-.nav-bar-item{
-  position: absolute;
-}
+} 
 
 .current-link::after{
   position: relative;
-  display:inline-block;
-  top: 36px;
+display:inline-flex;
+  justify-content: center;
+  align-items: center;
+  top: 34px;
   content: "";
   width: 100%;
-  height: 4px;
+  height:4px;
   border-radius: 2px;
   background-image: url("/images/hover.jpg");
 }
@@ -197,6 +199,7 @@ color: var(--dark-accent-color);
 .clients-link:hover {
   border: 1px solid #2196F3;
   color: var(--dark-accent-color);
+
 }
 
 .filter-button:focus,
@@ -628,8 +631,11 @@ transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.project-description:hover .project-overlay,
-.project-description:focus .project-overlay{
+.project-description:hover .project-overlay{
+  transform: translateY(0px);
+}
+
+.project-link:focus .project-overlay{
   transform: translateY(0px);
 }
 
