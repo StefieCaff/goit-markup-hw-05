@@ -584,34 +584,34 @@ color: var(--dark-accent-color);
   color: var(--sub-color);
 }
 
-.project-link{
-  display:block;
-  transition-property: box-shadow;
+.project-link {
+  display: block;
+  transition-property: box-shadow,transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-link:focus,
-.project-link:hover{
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
-    0px 4px 4px rgba(0, 0, 0, 0.06), 
+.project-link:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-
-.project-description{
+.project-description {
   position: relative;
   width: 370px;
-  height:294px;
+  height: 294px;
   overflow:hidden;
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.project-overlay{
-  position:absolute;
+.project-overlay {
+  position: absolute;
   top: 0;
   left: 0;
-  width: 370px;
-  height: 294px;
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
@@ -620,14 +620,13 @@ color: var(--dark-accent-color);
   color: var(--light-accent-color);
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(294px);
-  transition-property: transform;
+transition-property: transform;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
-} 
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
- .project-overlay:hover, 
- /* .project-description:hover{ */
-  transform: translateY(0);
+.project-description:hover .project-overlay{
+  transform: translateY(0px);
 }
 
 .footer{
