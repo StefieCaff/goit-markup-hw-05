@@ -140,7 +140,7 @@ margin-right: 50px;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-icon-link{
+/* .header-icon-link{
   display: flex;
   align-items: center;
   justify-content:center;
@@ -149,7 +149,7 @@ margin-right: 50px;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
 .header-icon{
   fill:currentColor;
@@ -172,10 +172,24 @@ color: var(--dark-accent-color);
 
 .navbar-contact-link{
   position: relative;
-  transition-property: background-color;
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+}
+
+.header-contact-link{
+  display:flex;
+  align-items:center;
+  color: var(--sub-color);
+  padding: 32px 0 31px 0;
+  font-weight:500;
+  font-size:14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .current-link::after{
@@ -234,16 +248,7 @@ color: var(--dark-accent-color);
   color: var(--light-accent-color);
 }
 
-.header-contact-link{
-  color: var(--sub-color);
-  font-weight:500;
-  font-size:14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 
 .hero-container{
   display: flex;
@@ -332,8 +337,6 @@ transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
-
-
 
 .is-hidden{
 visibility:hidden;
